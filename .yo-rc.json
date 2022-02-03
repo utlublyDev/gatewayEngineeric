@@ -1,0 +1,75 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "gateway",
+    "applications": {
+      "invoice": {
+        "applicationIndex": 2,
+        "serverPort": "8082"
+      },
+      "notification": {
+        "applicationIndex": 3,
+        "serverPort": "8083"
+      },
+      "product": {
+        "applicationIndex": 1,
+        "serverPort": "8081"
+      }
+    },
+    "authenticationType": "jwt",
+    "baseName": "gatewayEngineeric",
+    "blueprints": [],
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "clientFramework": "react",
+    "clientPackageManager": "npm",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1643907179269,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "devServerPort": 9060,
+    "dtoSuffix": "DTO",
+    "enableGradleEnterprise": false,
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "entities": [
+      "StoreOwner",
+      "ProductCategory",
+      "Reviews",
+      "Notification",
+      "ProductOrder",
+      "Invoice",
+      "Customer",
+      "Product",
+      "StoreCategories",
+      "Shipment",
+      "OrderItem"
+    ],
+    "entitySuffix": "",
+    "gradleEnterpriseHost": "",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "7.6.0",
+    "jwtSecretKey": "YzgyNDEyMTY3NWE1YjdjMDYzMjg5MTExODFkY2Y0Yjg0YjEzMzFmMzEyZTEwZjljYjBiNzlhODFiZTA4NTNiOTBiYWIzY2Q5ODUxMTAxZGE4NWMyODEyZTVlY2ZhYzc5YzJiY2JlNzAwNTZlNmVkZTMzMzg2ODYzYjhlOGM5NTM=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1643907839000,
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "otherModules": [],
+    "packageFolder": "qa/engineeric/store",
+    "packageName": "qa.engineeric.store",
+    "pages": [],
+    "prodDatabaseType": "mongodb",
+    "reactive": true,
+    "searchEngine": false,
+    "serverPort": "8080",
+    "serviceDiscoveryType": "eureka",
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "skipUserManagement": false,
+    "testFrameworks": ["cypress"],
+    "websocket": false,
+    "withAdminUi": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "gatewayEngineericApp": {
+    "storeCategories": {
+      "home": {
+        "title": "Store Categories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Store Categories",
+        "createOrEditLabel": "Create or edit a Store Categories",
+        "notFound": "No Store Categories found"
+      },
+      "created": "A new Store Categories is created with identifier {{ param }}",
+      "updated": "A Store Categories is updated with identifier {{ param }}",
+      "deleted": "A Store Categories is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Store Categories {{ id }}?"
+      },
+      "detail": {
+        "title": "Store Categories"
+      },
+      "id": "ID",
+      "userStoreOwnerId": "User Store Owner Id",
+      "categoryName": "Category Name",
+      "description": "Description",
+      "categoryNameInArabic": "Category Name In Arabic",
+      "descriptionInArabic": "Description In Arabic",
+      "userStoreOwnerIdImageUrl": "User Store Owner Id Image Url"
+    }
+  }
+}

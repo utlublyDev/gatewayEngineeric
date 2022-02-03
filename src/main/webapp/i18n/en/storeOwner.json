@@ -1,0 +1,46 @@
+{
+  "gatewayEngineericApp": {
+    "storeOwner": {
+      "home": {
+        "title": "Store Owners",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Store Owner",
+        "createOrEditLabel": "Create or edit a Store Owner",
+        "notFound": "No Store Owners found"
+      },
+      "created": "A new Store Owner is created with identifier {{ param }}",
+      "updated": "A Store Owner is updated with identifier {{ param }}",
+      "deleted": "A Store Owner is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Store Owner {{ id }}?"
+      },
+      "detail": {
+        "title": "Store Owner"
+      },
+      "id": "ID",
+      "userStoreOwnerId": "User Store Owner Id",
+      "storeName": "Store Name",
+      "storeNameInArabic": "Store Name In Arabic",
+      "address": "Address",
+      "addressInArabic": "Address In Arabic",
+      "longitude": "Longitude",
+      "latitude": "Latitude",
+      "isBusy": "Is Busy",
+      "city": "City",
+      "cityInArabic": "City In Arabic",
+      "description": "Description",
+      "descriptionInArabic": "Description In Arabic",
+      "storeContactNumber": "Store Contact Number",
+      "createdDate": "Created Date",
+      "storeLogoUrl": "Store Logo Url",
+      "isActive": "Is Active",
+      "hasDelivery": "Has Delivery",
+      "hasFreeDelivery": "Has Free Delivery",
+      "availableDateTime": "Available Date Time",
+      "shopOpeiningTime": "Shop Opeining Time",
+      "shopClosingTime": "Shop Closing Time",
+      "currency": "Currency",
+      "deliveryCost": "Delivery Cost"
+    }
+  }
+}

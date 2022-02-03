@@ -1,0 +1,9 @@
+{
+  "gatewayEngineericApp": {
+    "NotificationType": {
+      "null": "",
+      "EMAIL": "EMAIL",
+      "SMS": "SMS"
+    }
+  }
+}

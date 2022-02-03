@@ -1,0 +1,33 @@
+{
+  "gatewayEngineericApp": {
+    "productReviews": {
+      "home": {
+        "title": "Reviews",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Reviews",
+        "createOrEditLabel": "Create or edit a Reviews",
+        "notFound": "No Reviews found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Reviews {{ id }}?"
+      },
+      "detail": {
+        "title": "Reviews"
+      },
+      "id": "ID",
+      "customerId": "Customer Id",
+      "orderId": "Order Id",
+      "review": "Review",
+      "rating": "Rating",
+      "createdAt": "Created At",
+      "prodcutsId": "Prodcuts Id"
+    }
+  },
+  "productApp": {
+    "productReviews": {
+      "created": "A new Reviews is created with identifier {{ param }}",
+      "updated": "A Reviews is updated with identifier {{ param }}",
+      "deleted": "A Reviews is deleted with identifier {{ param }}"
+    }
+  }
+}
