@@ -1,0 +1,11 @@
+{
+  "gatewayEngineericApp": {
+    "paymentStatus": {
+      "null": "",
+      "DONE": "DONE",
+      "REJECTED": "REJECTED",
+      "CANCELD": "CANCELD",
+      "PENDING": "PENDING"
+    }
+  }
+}

@@ -101,6 +101,9 @@ class StoreOwnerResourceIT {
     private static final Double DEFAULT_DELIVERY_COST = 1D;
     private static final Double UPDATED_DELIVERY_COST = 2D;
 
+    private static final String DEFAULT_WEB_KEY = "AAAAAAAAAA";
+    private static final String UPDATED_WEB_KEY = "BBBBBBBBBB";
+
     private static final String ENTITY_API_URL = "/api/store-owners";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
 
@@ -142,7 +145,8 @@ class StoreOwnerResourceIT {
             .shopOpeiningTime(DEFAULT_SHOP_OPEINING_TIME)
             .shopClosingTime(DEFAULT_SHOP_CLOSING_TIME)
             .currency(DEFAULT_CURRENCY)
-            .deliveryCost(DEFAULT_DELIVERY_COST);
+            .deliveryCost(DEFAULT_DELIVERY_COST)
+            .webKey(DEFAULT_WEB_KEY);
         return storeOwner;
     }
 
@@ -176,7 +180,8 @@ class StoreOwnerResourceIT {
             .shopOpeiningTime(UPDATED_SHOP_OPEINING_TIME)
             .shopClosingTime(UPDATED_SHOP_CLOSING_TIME)
             .currency(UPDATED_CURRENCY)
-            .deliveryCost(UPDATED_DELIVERY_COST);
+            .deliveryCost(UPDATED_DELIVERY_COST)
+            .webKey(UPDATED_WEB_KEY);
         return storeOwner;
     }
 
@@ -226,6 +231,7 @@ class StoreOwnerResourceIT {
         assertThat(testStoreOwner.getShopClosingTime()).isEqualTo(DEFAULT_SHOP_CLOSING_TIME);
         assertThat(testStoreOwner.getCurrency()).isEqualTo(DEFAULT_CURRENCY);
         assertThat(testStoreOwner.getDeliveryCost()).isEqualTo(DEFAULT_DELIVERY_COST);
+        assertThat(testStoreOwner.getWebKey()).isEqualTo(DEFAULT_WEB_KEY);
     }
 
     @Test
@@ -548,6 +554,7 @@ class StoreOwnerResourceIT {
         assertThat(testStoreOwner.getShopClosingTime()).isEqualTo(DEFAULT_SHOP_CLOSING_TIME);
         assertThat(testStoreOwner.getCurrency()).isEqualTo(DEFAULT_CURRENCY);
         assertThat(testStoreOwner.getDeliveryCost()).isEqualTo(DEFAULT_DELIVERY_COST);
+        assertThat(testStoreOwner.getWebKey()).isEqualTo(DEFAULT_WEB_KEY);
     }
 
     @Test
@@ -613,7 +620,9 @@ class StoreOwnerResourceIT {
             .jsonPath("$.[*].currency")
             .value(hasItem(DEFAULT_CURRENCY))
             .jsonPath("$.[*].deliveryCost")
-            .value(hasItem(DEFAULT_DELIVERY_COST.doubleValue()));
+            .value(hasItem(DEFAULT_DELIVERY_COST.doubleValue()))
+            .jsonPath("$.[*].webKey")
+            .value(hasItem(DEFAULT_WEB_KEY));
     }
 
     @Test
@@ -679,7 +688,9 @@ class StoreOwnerResourceIT {
             .jsonPath("$.currency")
             .value(is(DEFAULT_CURRENCY))
             .jsonPath("$.deliveryCost")
-            .value(is(DEFAULT_DELIVERY_COST.doubleValue()));
+            .value(is(DEFAULT_DELIVERY_COST.doubleValue()))
+            .jsonPath("$.webKey")
+            .value(is(DEFAULT_WEB_KEY));
     }
 
     @Test
@@ -726,7 +737,8 @@ class StoreOwnerResourceIT {
             .shopOpeiningTime(UPDATED_SHOP_OPEINING_TIME)
             .shopClosingTime(UPDATED_SHOP_CLOSING_TIME)
             .currency(UPDATED_CURRENCY)
-            .deliveryCost(UPDATED_DELIVERY_COST);
+            .deliveryCost(UPDATED_DELIVERY_COST)
+            .webKey(UPDATED_WEB_KEY);
 
         webTestClient
             .put()
@@ -764,6 +776,7 @@ class StoreOwnerResourceIT {
         assertThat(testStoreOwner.getShopClosingTime()).isEqualTo(UPDATED_SHOP_CLOSING_TIME);
         assertThat(testStoreOwner.getCurrency()).isEqualTo(UPDATED_CURRENCY);
         assertThat(testStoreOwner.getDeliveryCost()).isEqualTo(UPDATED_DELIVERY_COST);
+        assertThat(testStoreOwner.getWebKey()).isEqualTo(UPDATED_WEB_KEY);
     }
 
     @Test
@@ -887,6 +900,7 @@ class StoreOwnerResourceIT {
         assertThat(testStoreOwner.getShopClosingTime()).isEqualTo(DEFAULT_SHOP_CLOSING_TIME);
         assertThat(testStoreOwner.getCurrency()).isEqualTo(DEFAULT_CURRENCY);
         assertThat(testStoreOwner.getDeliveryCost()).isEqualTo(DEFAULT_DELIVERY_COST);
+        assertThat(testStoreOwner.getWebKey()).isEqualTo(DEFAULT_WEB_KEY);
     }
 
     @Test
@@ -923,7 +937,8 @@ class StoreOwnerResourceIT {
             .shopOpeiningTime(UPDATED_SHOP_OPEINING_TIME)
             .shopClosingTime(UPDATED_SHOP_CLOSING_TIME)
             .currency(UPDATED_CURRENCY)
-            .deliveryCost(UPDATED_DELIVERY_COST);
+            .deliveryCost(UPDATED_DELIVERY_COST)
+            .webKey(UPDATED_WEB_KEY);
 
         webTestClient
             .patch()
@@ -961,6 +976,7 @@ class StoreOwnerResourceIT {
         assertThat(testStoreOwner.getShopClosingTime()).isEqualTo(UPDATED_SHOP_CLOSING_TIME);
         assertThat(testStoreOwner.getCurrency()).isEqualTo(UPDATED_CURRENCY);
         assertThat(testStoreOwner.getDeliveryCost()).isEqualTo(UPDATED_DELIVERY_COST);
+        assertThat(testStoreOwner.getWebKey()).isEqualTo(UPDATED_WEB_KEY);
     }
 
     @Test

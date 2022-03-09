@@ -181,6 +181,12 @@ export const StoreOwnerDetail = (props: RouteComponentProps<{ id: string }>) => 
             </span>
           </dt>
           <dd>{storeOwnerEntity.deliveryCost}</dd>
+          <dt>
+            <span id="webKey">
+              <Translate contentKey="gatewayEngineericApp.storeOwner.webKey">Web Key</Translate>
+            </span>
+          </dt>
+          <dd>{storeOwnerEntity.webKey}</dd>
         </dl>
         <Button tag={Link} to="/store-owner" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}

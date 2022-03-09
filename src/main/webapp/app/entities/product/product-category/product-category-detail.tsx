@@ -98,6 +98,18 @@ export const ProductCategoryDetail = (props: RouteComponentProps<{ id: string }>
           </dt>
           <dd>{productCategoryEntity.status}</dd>
           <dt>
+            <span id="webKey">
+              <Translate contentKey="gatewayEngineericApp.productProductCategory.webKey">Web Key</Translate>
+            </span>
+          </dt>
+          <dd>{productCategoryEntity.webKey}</dd>
+          <dt>
+            <span id="imageUrl">
+              <Translate contentKey="gatewayEngineericApp.productProductCategory.imageUrl">Image Url</Translate>
+            </span>
+          </dt>
+          <dd>{productCategoryEntity.imageUrl}</dd>
+          <dt>
             <Translate contentKey="gatewayEngineericApp.productProductCategory.product">Product</Translate>
           </dt>
           <dd>

@@ -13,6 +13,8 @@ export interface IProductCategory {
   dateAdded?: string | null;
   dateModified?: string | null;
   status?: CategoryStatus | null;
+  webKey?: string | null;
+  imageUrl?: string | null;
   products?: IProduct[] | null;
 }
 

@@ -118,6 +118,9 @@ export const StoreOwner = (props: RouteComponentProps<{ url: string }>) => {
                 <th>
                   <Translate contentKey="gatewayEngineericApp.storeOwner.deliveryCost">Delivery Cost</Translate>
                 </th>
+                <th>
+                  <Translate contentKey="gatewayEngineericApp.storeOwner.webKey">Web Key</Translate>
+                </th>
                 <th />
               </tr>
             </thead>
@@ -166,6 +169,7 @@ export const StoreOwner = (props: RouteComponentProps<{ url: string }>) => {
                   </td>
                   <td>{storeOwner.currency}</td>
                   <td>{storeOwner.deliveryCost}</td>
+                  <td>{storeOwner.webKey}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`${match.url}/${storeOwner.id}`} color="info" size="sm" data-cy="entityDetailsButton">

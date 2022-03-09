@@ -24,6 +24,8 @@
       "dateAdded": "Date Added",
       "dateModified": "Date Modified",
       "status": "Status",
+      "webKey": "Web Key",
+      "imageUrl": "Image Url",
       "product": "Product"
     }
   },

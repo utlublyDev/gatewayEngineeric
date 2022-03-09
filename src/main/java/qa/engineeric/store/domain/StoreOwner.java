@@ -100,6 +100,9 @@ public class StoreOwner implements Serializable {
     @Field("delivery_cost")
     private Double deliveryCost;
 
+    @Field("web_key")
+    private String webKey;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
 
     public String getId() {
@@ -414,6 +417,19 @@ public class StoreOwner implements Serializable {
         this.deliveryCost = deliveryCost;
     }
 
+    public String getWebKey() {
+        return this.webKey;
+    }
+
+    public StoreOwner webKey(String webKey) {
+        this.setWebKey(webKey);
+        return this;
+    }
+
+    public void setWebKey(String webKey) {
+        this.webKey = webKey;
+    }
+
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
     @Override
@@ -461,6 +477,7 @@ public class StoreOwner implements Serializable {
             ", shopClosingTime='" + getShopClosingTime() + "'" +
             ", currency='" + getCurrency() + "'" +
             ", deliveryCost=" + getDeliveryCost() +
+            ", webKey='" + getWebKey() + "'" +
             "}";
     }
 }

@@ -18,6 +18,10 @@
         "storeCategories": "Store Categories",
         "invoiceShipment": "Shipment",
         "productOrderItem": "Order Item",
+        "topBannerInformation": "Top Banner Information",
+        "sliderImageSlider": "Slider Image Slider",
+        "storeAdvBanner": "Store Adv Banner",
+        "invoicePayment": "Payment",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

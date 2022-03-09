@@ -95,6 +95,14 @@ public class SecurityConfiguration {
             .pathMatchers("/*.*").permitAll()
             .pathMatchers("/api/authenticate").permitAll()
             .pathMatchers("/api/register").permitAll()
+            .pathMatchers("/api/create-checkout-session").permitAll()
+            .pathMatchers("/api/top-banner-information/store/web/**").permitAll()
+            .pathMatchers("/api/slider-image-sliders/store/web/**").permitAll()
+            .pathMatchers("/api/store-adv-banners/store/web/**").permitAll()
+            .pathMatchers("/api/endPoint/store/web/public/**").permitAll()
+            .pathMatchers("/api/categories-web/store/web/public/Categories/**").permitAll()
+            .pathMatchers("/api/webhook").permitAll()
+
             .pathMatchers("/api/activate").permitAll()
             .pathMatchers("/api/account/reset-password/init").permitAll()
             .pathMatchers("/api/account/reset-password/finish").permitAll()
@@ -106,6 +114,8 @@ public class SecurityConfiguration {
             .pathMatchers("/services/*/*.js.map").permitAll()
             .pathMatchers("/services/*/v3/api-docs").hasAuthority(AuthoritiesConstants.ADMIN)
             .pathMatchers("/services/**").authenticated()
+
+
             .pathMatchers("/management/health").permitAll()
             .pathMatchers("/management/health/**").permitAll()
             .pathMatchers("/management/info").permitAll()

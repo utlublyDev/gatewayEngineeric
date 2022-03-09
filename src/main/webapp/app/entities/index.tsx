@@ -15,6 +15,10 @@ import Product from './product/product';
 import StoreCategories from './store-categories';
 import Shipment from './invoice/shipment';
 import OrderItem from './product/order-item';
+import TopBannerInformation from './top-banner-information';
+import SliderImageSlider from './slider-image-slider';
+import StoreAdvBanner from './store-adv-banner';
+import Payment from './invoice/payment';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 const Routes = ({ match }) => (
@@ -32,6 +36,10 @@ const Routes = ({ match }) => (
       <ErrorBoundaryRoute path={`${match.url}store-categories`} component={StoreCategories} />
       <ErrorBoundaryRoute path={`${match.url}shipment`} component={Shipment} />
       <ErrorBoundaryRoute path={`${match.url}order-item`} component={OrderItem} />
+      <ErrorBoundaryRoute path={`${match.url}top-banner-information`} component={TopBannerInformation} />
+      <ErrorBoundaryRoute path={`${match.url}slider-image-slider`} component={SliderImageSlider} />
+      <ErrorBoundaryRoute path={`${match.url}store-adv-banner`} component={StoreAdvBanner} />
+      <ErrorBoundaryRoute path={`${match.url}payment`} component={Payment} />
       {/* jhipster-needle-add-route-path - JHipster will add routes here */}
     </Switch>
   </div>

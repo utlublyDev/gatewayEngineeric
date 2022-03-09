@@ -1,0 +1,27 @@
+{
+  "gatewayEngineericApp": {
+    "sliderImageSlider": {
+      "home": {
+        "title": "Slider Image Sliders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Slider Image Slider",
+        "createOrEditLabel": "Create or edit a Slider Image Slider",
+        "notFound": "No Slider Image Sliders found"
+      },
+      "created": "A new Slider Image Slider is created with identifier {{ param }}",
+      "updated": "A Slider Image Slider is updated with identifier {{ param }}",
+      "deleted": "A Slider Image Slider is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Slider Image Slider {{ id }}?"
+      },
+      "detail": {
+        "title": "Slider Image Slider"
+      },
+      "id": "ID",
+      "storeOwnerId": "Store Owner Id",
+      "webKey": "Web Key",
+      "imageUrl": "Image Url",
+      "alt": "Alt"
+    }
+  }
+}

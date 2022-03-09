@@ -33,6 +33,14 @@ import storeCategories from 'app/entities/store-categories/store-categories.redu
 import shipment from 'app/entities/invoice/shipment/shipment.reducer';
 // prettier-ignore
 import orderItem from 'app/entities/product/order-item/order-item.reducer';
+// prettier-ignore
+import topBannerInformation from 'app/entities/top-banner-information/top-banner-information.reducer';
+// prettier-ignore
+import sliderImageSlider from 'app/entities/slider-image-slider/slider-image-slider.reducer';
+// prettier-ignore
+import storeAdvBanner from 'app/entities/store-adv-banner/store-adv-banner.reducer';
+// prettier-ignore
+import payment from 'app/entities/invoice/payment/payment.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 const rootReducer = {
@@ -57,6 +65,10 @@ const rootReducer = {
   storeCategories,
   shipment,
   orderItem,
+  topBannerInformation,
+  sliderImageSlider,
+  storeAdvBanner,
+  payment,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 };

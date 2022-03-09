@@ -215,6 +215,9 @@ public class StoreOwnerResource {
                         if (storeOwner.getDeliveryCost() != null) {
                             existingStoreOwner.setDeliveryCost(storeOwner.getDeliveryCost());
                         }
+                        if (storeOwner.getWebKey() != null) {
+                            existingStoreOwner.setWebKey(storeOwner.getWebKey());
+                        }
 
                         return existingStoreOwner;
                     })

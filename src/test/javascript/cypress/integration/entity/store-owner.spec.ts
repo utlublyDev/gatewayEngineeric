@@ -17,18 +17,18 @@ describe('StoreOwner e2e test', () => {
   const username = Cypress.env('E2E_USERNAME') ?? 'user';
   const password = Cypress.env('E2E_PASSWORD') ?? 'user';
   const storeOwnerSample = {
-    userStoreOwnerId: 'interface Internal Reverse-engineered',
-    storeName: 'COM panel',
-    storeNameInArabic: 'Engineer',
-    address: 'digital Configuration Indiana',
-    addressInArabic: 'auxiliary empower Advanced',
-    longitude: 58099,
-    latitude: 68136,
-    isBusy: false,
-    city: 'Lake Lilliana',
-    cityInArabic: 'wireless solution Generic',
-    hasDelivery: true,
-    availableDateTime: '2022-02-03T13:40:48.710Z',
+    userStoreOwnerId: 'COM panel',
+    storeName: 'Engineer',
+    storeNameInArabic: 'digital Configuration Indiana',
+    address: 'auxiliary empower Advanced',
+    addressInArabic: 'Canadian calculate',
+    longitude: 79978,
+    latitude: 71649,
+    isBusy: true,
+    city: 'Lake Laverna',
+    cityInArabic: 'Account',
+    hasDelivery: false,
+    availableDateTime: '2022-02-03T04:17:11.285Z',
   };
 
   let storeOwner: any;
@@ -212,6 +212,10 @@ describe('StoreOwner e2e test', () => {
       cy.get(`[data-cy="currency"]`).type('payment Squares').should('have.value', 'payment Squares');
 
       cy.get(`[data-cy="deliveryCost"]`).type('5101').should('have.value', '5101');
+
+      cy.get(`[data-cy="webKey"]`)
+        .type('interface Internal Reverse-engineered')
+        .should('have.value', 'interface Internal Reverse-engineered');
 
       cy.get(entityCreateSaveButtonSelector).click();
 

@@ -17,9 +17,9 @@ describe('ProductCategory e2e test', () => {
   const username = Cypress.env('E2E_USERNAME') ?? 'user';
   const password = Cypress.env('E2E_PASSWORD') ?? 'user';
   const productCategorySample = {
-    userStoreOwnerId: 'mint',
-    productCategoryName: 'Djibouti',
-    productCategoryNameInArabic: 'Cambridgeshire redefine Mouse',
+    userStoreOwnerId: 'Cambridgeshire redefine Mouse',
+    productCategoryName: 'withdrawal tan Luxembourg',
+    productCategoryNameInArabic: 'Metal',
   };
 
   let productCategory: any;
@@ -171,6 +171,10 @@ describe('ProductCategory e2e test', () => {
       cy.get(`[data-cy="dateModified"]`).type('2022-02-02').should('have.value', '2022-02-02');
 
       cy.get(`[data-cy="status"]`).select('AVAILABLE');
+
+      cy.get(`[data-cy="webKey"]`).type('mint').should('have.value', 'mint');
+
+      cy.get(`[data-cy="imageUrl"]`).type('Djibouti').should('have.value', 'Djibouti');
 
       cy.get(entityCreateSaveButtonSelector).click();
 

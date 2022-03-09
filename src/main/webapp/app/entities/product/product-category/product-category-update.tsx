@@ -173,6 +173,20 @@ export const ProductCategoryUpdate = (props: RouteComponentProps<{ id: string }>
                 ))}
               </ValidatedField>
               <ValidatedField
+                label={translate('gatewayEngineericApp.productProductCategory.webKey')}
+                id="product-category-webKey"
+                name="webKey"
+                data-cy="webKey"
+                type="text"
+              />
+              <ValidatedField
+                label={translate('gatewayEngineericApp.productProductCategory.imageUrl')}
+                id="product-category-imageUrl"
+                name="imageUrl"
+                data-cy="imageUrl"
+                type="text"
+              />
+              <ValidatedField
                 label={translate('gatewayEngineericApp.productProductCategory.product')}
                 id="product-category-product"
                 data-cy="product"

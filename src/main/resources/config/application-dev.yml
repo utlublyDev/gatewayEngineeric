@@ -121,3 +121,8 @@ jhipster:
 # ===================================================================
 
 # application:
+stripe:
+  webhook: whsec_5c9cc6571b32c70689f8974842cd2dcd8b1aa55443166bb0686326a960e7a159
+  publicApiKey: pk_test_51KRM9GJCSwzHFDV5v2kHRfCACi8u2DO8I5LlYe0PF2Tk1DXM8OAcBn4Eu0n3aioTXsKgL4VrJtMouGkMpTT4yzQy00PdQLKO7b
+  privateApiKey: sk_test_51KRM9GJCSwzHFDV5wJzszfXJSSifYLvSkRAO70HhyMDZzJcNjGXz2W6dtREIr0utl6yvg7G5fsmxtE3JYobbzDZE00iGNc3fqA
+  baseURL: localhost:8080

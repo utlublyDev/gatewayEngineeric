@@ -297,6 +297,13 @@ export const StoreOwnerUpdate = (props: RouteComponentProps<{ id: string }>) => 
                 data-cy="deliveryCost"
                 type="text"
               />
+              <ValidatedField
+                label={translate('gatewayEngineericApp.storeOwner.webKey')}
+                id="store-owner-webKey"
+                name="webKey"
+                data-cy="webKey"
+                type="text"
+              />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/store-owner" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
                 &nbsp;

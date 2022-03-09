@@ -1,0 +1,29 @@
+{
+  "gatewayEngineericApp": {
+    "topBannerInformation": {
+      "home": {
+        "title": "Top Banner Informations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Top Banner Information",
+        "createOrEditLabel": "Create or edit a Top Banner Information",
+        "notFound": "No Top Banner Informations found"
+      },
+      "created": "A new Top Banner Information is created with identifier {{ param }}",
+      "updated": "A Top Banner Information is updated with identifier {{ param }}",
+      "deleted": "A Top Banner Information is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Top Banner Information {{ id }}?"
+      },
+      "detail": {
+        "title": "Top Banner Information"
+      },
+      "id": "ID",
+      "enableBanner": "Enable Banner",
+      "bannerText": "Banner Text",
+      "startBanner": "Start Banner",
+      "endBanner": "End Banner",
+      "webKey": "Web Key",
+      "storeOwnerId": "Store Owner Id"
+    }
+  }
+}

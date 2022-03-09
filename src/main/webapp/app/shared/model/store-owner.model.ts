@@ -25,6 +25,7 @@ export interface IStoreOwner {
   shopClosingTime?: string | null;
   currency?: string | null;
   deliveryCost?: number | null;
+  webKey?: string | null;
 }
 
 export const defaultValue: Readonly<IStoreOwner> = {

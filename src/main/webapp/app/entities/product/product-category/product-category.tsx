@@ -83,6 +83,12 @@ export const ProductCategory = (props: RouteComponentProps<{ url: string }>) => 
                   <Translate contentKey="gatewayEngineericApp.productProductCategory.status">Status</Translate>
                 </th>
                 <th>
+                  <Translate contentKey="gatewayEngineericApp.productProductCategory.webKey">Web Key</Translate>
+                </th>
+                <th>
+                  <Translate contentKey="gatewayEngineericApp.productProductCategory.imageUrl">Image Url</Translate>
+                </th>
+                <th>
                   <Translate contentKey="gatewayEngineericApp.productProductCategory.product">Product</Translate>
                 </th>
                 <th />
@@ -115,6 +121,8 @@ export const ProductCategory = (props: RouteComponentProps<{ url: string }>) => 
                   <td>
                     <Translate contentKey={`gatewayEngineericApp.CategoryStatus.${productCategory.status}`} />
                   </td>
+                  <td>{productCategory.webKey}</td>
+                  <td>{productCategory.imageUrl}</td>
                   <td>
                     {productCategory.products
                       ? productCategory.products.map((val, j) => (

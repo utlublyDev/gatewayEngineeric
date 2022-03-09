@@ -40,7 +40,8 @@
       "shopOpeiningTime": "Shop Opeining Time",
       "shopClosingTime": "Shop Closing Time",
       "currency": "Currency",
-      "deliveryCost": "Delivery Cost"
+      "deliveryCost": "Delivery Cost",
+      "webKey": "Web Key"
     }
   }
 }
