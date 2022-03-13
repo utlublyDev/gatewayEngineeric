@@ -26,7 +26,7 @@ public class WebResources {
         login.setPassword("admin");
         login.setRememberMe(false);
         ResponseEntity<JsonNode> AuthResponse = restTemplate.postForEntity(
-            "http://192.168.1.107:8080/api/authenticate",
+            "http://173.231.224.25:8099/api/authenticate",
             login,
             JsonNode.class
         );
@@ -45,7 +45,7 @@ public class WebResources {
         HttpEntity HTTPentity = new HttpEntity(reqHeaders);
         return restTemplate
             .exchange(
-                "http://192.168.1.107:8080/services/product/api/product-categories/store/web/" + userStoreOwnerId + "/" + webKey,
+                "http://173.231.224.25:8099/services/product/api/product-categories/store/web/" + userStoreOwnerId + "/" + webKey,
                 HttpMethod.GET,
                 HTTPentity,
                 String.class
@@ -62,7 +62,7 @@ public class WebResources {
         HttpEntity HTTPentity = new HttpEntity(reqHeaders);
         return restTemplate
             .exchange(
-                "http://192.168.1.107:8080/services/product/api/product-categories/store/web/categoriesNames/" +
+                "http://173.231.224.25:8099/services/product/api/product-categories/store/web/categoriesNames/" +
                 userStoreOwnerId +
                 "/" +
                 webKey,
@@ -81,7 +81,7 @@ public class WebResources {
         HttpEntity HTTPentity = new HttpEntity(orderItem, reqHeaders);
 
         ResponseEntity<OrderItem> SendRequestToMicroServiceOrderObject = restTemplate.postForEntity(
-            "http://192.168.1.107:8080/services/product/api/order-items",
+            "http://173.231.224.25:8099/services/product/api/order-items",
             HTTPentity,
             OrderItem.class
         );
@@ -94,7 +94,12 @@ public class WebResources {
         reqHeaders.set("Authorization", "Bearer " + JWT());
         HttpEntity HTTPentity = new HttpEntity(reqHeaders);
         return restTemplate
-            .exchange("http://192.168.1.107:8080/services/product/api/order-items/by/id/" + Id, HttpMethod.GET, HTTPentity, OrderItem.class)
+            .exchange(
+                "http://173.231.224.25:8099/services/product/api/order-items/by/id/" + Id,
+                HttpMethod.GET,
+                HTTPentity,
+                OrderItem.class
+            )
             .getBody();
     }
 
@@ -107,7 +112,7 @@ public class WebResources {
         HttpEntity HTTPentity = new HttpEntity(orders, reqHeaders);
 
         return restTemplate.exchange(
-            "http://192.168.1.107:8080/services/product/api/order-items/" + orders.getId(),
+            "http://173.231.224.25:8099/services/product/api/order-items/" + orders.getId(),
             HttpMethod.PUT,
             HTTPentity,
             String.class
