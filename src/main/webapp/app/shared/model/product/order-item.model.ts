@@ -11,6 +11,7 @@ export interface IOrderItem {
   status?: OrderItemStatus;
   paymentId?: string;
   orderNumber?: number;
+  storeOrderStatus?: string | null;
   product?: IProduct;
   order?: IProductOrder;
 }

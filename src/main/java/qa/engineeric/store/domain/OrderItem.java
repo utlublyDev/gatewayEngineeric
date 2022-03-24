@@ -26,6 +26,15 @@ public class OrderItem implements Serializable {
     private String orderNumber;
 
     private ZonedDateTime dateAdded;
+    private String storeOrderStatus;
+
+    public String getStoreOrderStatus() {
+        return storeOrderStatus;
+    }
+
+    public void setStoreOrderStatus(String storeOrderStatus) {
+        this.storeOrderStatus = storeOrderStatus;
+    }
 
     private List ShoppingCart;
 

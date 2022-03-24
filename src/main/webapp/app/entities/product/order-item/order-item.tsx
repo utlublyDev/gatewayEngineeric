@@ -129,6 +129,10 @@ export const OrderItem = (props: RouteComponentProps<{ url: string }>) => {
                   <Translate contentKey="gatewayEngineericApp.productOrderItem.orderNumber">Order Number</Translate>{' '}
                   <FontAwesomeIcon icon="sort" />
                 </th>
+                <th className="hand" onClick={sort('storeOrderStatus')}>
+                  <Translate contentKey="gatewayEngineericApp.productOrderItem.storeOrderStatus">Store Order Status</Translate>{' '}
+                  <FontAwesomeIcon icon="sort" />
+                </th>
                 <th>
                   <Translate contentKey="gatewayEngineericApp.productOrderItem.product">Product</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
@@ -155,6 +159,7 @@ export const OrderItem = (props: RouteComponentProps<{ url: string }>) => {
                   </td>
                   <td>{orderItem.paymentId}</td>
                   <td>{orderItem.orderNumber}</td>
+                  <td>{orderItem.storeOrderStatus}</td>
                   <td>{orderItem.product ? <Link to={`product/${orderItem.product.id}`}>{orderItem.product.productName}</Link> : ''}</td>
                   <td>{orderItem.order ? <Link to={`product-order/${orderItem.order.id}`}>{orderItem.order.code}</Link> : ''}</td>
                   <td className="text-end">

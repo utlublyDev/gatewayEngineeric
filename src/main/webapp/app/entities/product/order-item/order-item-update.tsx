@@ -177,6 +177,13 @@ export const OrderItemUpdate = (props: RouteComponentProps<{ id: string }>) => {
                 }}
               />
               <ValidatedField
+                label={translate('gatewayEngineericApp.productOrderItem.storeOrderStatus')}
+                id="order-item-storeOrderStatus"
+                name="storeOrderStatus"
+                data-cy="storeOrderStatus"
+                type="text"
+              />
+              <ValidatedField
                 id="order-item-product"
                 name="product"
                 data-cy="product"

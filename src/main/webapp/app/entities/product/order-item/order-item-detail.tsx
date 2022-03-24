@@ -72,6 +72,12 @@ export const OrderItemDetail = (props: RouteComponentProps<{ id: string }>) => {
           </dt>
           <dd>{orderItemEntity.orderNumber}</dd>
           <dt>
+            <span id="storeOrderStatus">
+              <Translate contentKey="gatewayEngineericApp.productOrderItem.storeOrderStatus">Store Order Status</Translate>
+            </span>
+          </dt>
+          <dd>{orderItemEntity.storeOrderStatus}</dd>
+          <dt>
             <Translate contentKey="gatewayEngineericApp.productOrderItem.product">Product</Translate>
           </dt>
           <dd>{orderItemEntity.product ? orderItemEntity.product.productName : ''}</dd>

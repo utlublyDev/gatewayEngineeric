@@ -22,6 +22,7 @@
       "status": "Status",
       "paymentId": "Payment Id",
       "orderNumber": "Order Number",
+      "storeOrderStatus": "Store Order Status",
       "product": "Product",
       "order": "Order"
     }

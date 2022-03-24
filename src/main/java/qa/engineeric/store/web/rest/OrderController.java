@@ -64,6 +64,7 @@ public class OrderController {
         orders.setUserStoreOwnerId(res_productsList.get(0).getUserStoreOwnerId());
         orders.setUserId(res_productsList.get(0).getUserId());
         orders.setWebKey(res_productsList.get(0).getWebKey());
+        orders.setStoreOrderStatus("Pending");
         web.send_Request_To_Product_MicroService(orders);
 
         return new ResponseEntity<StripeResponse>(stripeResponse, HttpStatus.OK);

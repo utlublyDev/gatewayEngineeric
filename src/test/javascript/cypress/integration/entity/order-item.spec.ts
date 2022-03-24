@@ -17,13 +17,13 @@ describe('OrderItem e2e test', () => {
   const username = Cypress.env('E2E_USERNAME') ?? 'user';
   const password = Cypress.env('E2E_PASSWORD') ?? 'user';
   const orderItemSample = {
-    userStoreOwnerId: 'digital Factors Idaho',
-    userId: 'Borders Loan card',
-    quantity: 39292,
-    totalPrice: 47468,
-    status: 'BACK_ORDER',
-    paymentId: 'Malaysia Missouri deposit',
-    orderNumber: 56015,
+    userStoreOwnerId: 'Borders Loan card',
+    userId: 'Springs Malaysia',
+    quantity: 58819,
+    totalPrice: 49628,
+    status: 'OUT_OF_STOCK',
+    paymentId: 'to Borders',
+    orderNumber: 15058,
   };
 
   let orderItem: any;
@@ -252,6 +252,8 @@ describe('OrderItem e2e test', () => {
       cy.get(`[data-cy="paymentId"]`).type('magenta project compressing').should('have.value', 'magenta project compressing');
 
       cy.get(`[data-cy="orderNumber"]`).type('99918').should('have.value', '99918');
+
+      cy.get(`[data-cy="storeOrderStatus"]`).type('digital Factors Idaho').should('have.value', 'digital Factors Idaho');
 
       cy.get(`[data-cy="product"]`).select(1);
       cy.get(`[data-cy="order"]`).select(1);
